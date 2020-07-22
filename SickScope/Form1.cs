@@ -6,8 +6,6 @@ namespace SickScope
 {
     public partial class Form1 : Form
     {
-        int x;
-        int y;
         private MouseHook mouseHook;
         private KeyboardHook KeyboardHookLock;
         private int x;
