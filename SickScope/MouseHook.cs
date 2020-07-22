@@ -5,6 +5,7 @@ using System.Diagnostics;
 namespace SickScope
 {
     /// <summary>
+    /// https://github.com/rvknth043/Global-Low-Level-Key-Board-And-Mouse-Hook/tree/master/GlobalLowLevelHooks
     /// Class for intercepting low level Windows mouse hooks.
     /// </summary>
     class MouseHook
