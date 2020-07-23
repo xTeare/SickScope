@@ -60,6 +60,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(200, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -258,9 +259,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(7, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 13);
+            this.label5.Size = new System.Drawing.Size(121, 13);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Refresh (Lower is Better)";
+            this.label5.Text = "Refresh (Lower is faster)";
             // 
             // num_Refresh
             // 
@@ -279,7 +280,7 @@
             this.num_Refresh.Size = new System.Drawing.Size(52, 20);
             this.num_Refresh.TabIndex = 8;
             this.num_Refresh.Value = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -289,9 +290,9 @@
             this.cb_IgnoreScope.AutoSize = true;
             this.cb_IgnoreScope.Location = new System.Drawing.Point(9, 328);
             this.cb_IgnoreScope.Name = "cb_IgnoreScope";
-            this.cb_IgnoreScope.Size = new System.Drawing.Size(120, 17);
+            this.cb_IgnoreScope.Size = new System.Drawing.Size(111, 17);
             this.cb_IgnoreScope.TabIndex = 12;
-            this.cb_IgnoreScope.Text = "Ignore SickScope™";
+            this.cb_IgnoreScope.Text = "Ignore SickScope";
             this.cb_IgnoreScope.UseVisualStyleBackColor = true;
             // 
             // pan_HorizontalColor
@@ -358,7 +359,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numHThick);
             this.Name = "Form1";
-            this.Text = "SickScope™";
+            this.Text = "SickScope";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHThick)).EndInit();

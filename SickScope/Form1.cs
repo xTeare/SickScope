@@ -8,18 +8,18 @@ namespace SickScope
     {
         private MouseHook mouseHook;
         private KeyboardHook KeyboardHookLock;
+
         private int x;
         private int y;
+        private int captureCounter;
+
         private bool lockX;
         private bool lockY;
-
         private bool altPressed;
         private bool shiftPressed;
         private bool xPressed;
         private bool yPressed;
 
-        private int captureCounter = 0;
-        private int capCounterMax = 4;
 
         private Color horizontalLineColor = Color.Lime;
         private Color verticalLineColor = Color.Lime;
@@ -102,8 +102,9 @@ namespace SickScope
                     y = mY;
 
 
-                if (captureCounter >= capCounterMax)
+                if (captureCounter >= (int)num_Refresh.Value)
                 {
+                    // Return if the mouse was not moved
                     if (cb_IgnoreScope.Checked)
                         if( mX >= this.Location.X && mX <= this.Location.X + this.Width)
                             if(mY >= this.Location.Y && mY <= this.Location.Y + this.Height)
